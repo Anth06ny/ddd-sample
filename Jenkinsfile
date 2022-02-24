@@ -34,7 +34,7 @@ pipeline {
    stage('Quality') {
       steps {
        withSonarQubeEnv('Sonar') {
-          bat 'mvn sonar:sonar'
+          bat 'mvn sonar:sonar -Dsonar.projectKey=Anth06ny_ddd-sample'
         }
     }
    }
